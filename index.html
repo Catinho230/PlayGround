@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <title>ALL★STAR CLASH — JoJo Fighting Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="All-Star Clash início"><span class="brand-mark">★</span><span>ALL★STAR <b>CLASH</b></span></a>
+    <nav aria-label="Navegação principal">
+      <a class="nav-link active" href="#home">INÍCIO</a><a class="nav-link" href="#roster">ELENCO</a><a class="nav-link" href="#systems">SISTEMAS</a><a class="nav-link" href="#modes">MODOS</a>
+    </nav>
+    <button class="sound-toggle" id="soundToggle" aria-label="Ativar sons"><span class="sound-dot"></span> SOM <span id="soundState">OFF</span></button>
+  </header>
+
+  <main>
+    <section class="hero page-section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> O DESTINO COLOCA TODOS NO MESMO RINGUE</p>
+        <h1>ALL★STAR<br><i>CLASH</i></h1>
+        <p class="hero-lede">Uma celebração do combate, da pose impossível e da vontade Joestar. Escolha sua era. Encontre seu destino.</p>
+        <div class="hero-actions"><button class="primary-btn" id="openBattle"><span>▶</span> JOGAR AGORA</button><a class="text-link" href="#systems">CONHEÇA OS SISTEMAS <span>↘</span></a></div>
+        <div class="hero-meta"><span><b>8</b> PARTES</span><span class="meta-divider"></span><span><b>1</b> DESTINO</span><span class="meta-divider"></span><span class="platform-pill">FAN-MADE BROWSER FIGHTER</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração gráfica de lutadores">
+        <div class="sun-disc"></div><div class="slash slash-one"></div><div class="slash slash-two"></div>
+        <div class="hero-kanji">ゴ<br>ゴ<br>ゴ</div>
+        <div class="hero-figure hero-figure-back"><div class="figure-head"></div><div class="figure-body"></div><div class="figure-arm"></div></div>
+        <div class="hero-figure hero-figure-front"><div class="figure-head"></div><div class="figure-body"></div><div class="figure-arm"></div></div>
+        <div class="hero-caption"><span>運命</span><b>YOUR<br>FIGHT.</b></div>
+        <div class="art-label">THE JOESTAR LEGACY — 1880 / ∞</div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 04</span></div>
+    </section>
+
+    <section class="intro-strip"><span class="strip-star">✦</span><p>“Yare yare daze.” <span>— UMA SAGA, OITO GERAÇÕES, UM SÓ RINGUE.</span></p><span class="strip-star">✦</span></section>
+
+    <section class="art-direction" aria-label="Direção de arte e som"><article><span>01 — TRAÇO</span><b>CEL-SHADING DRAMÁTICO</b><p>Contornos fortes, cores em blocos e poses esculturais evocam a linguagem visual extravagante de Hirohiko Araki.</p></article><article><span>02 — ENCONTRO</span><b>ALL-STAR, TODAS AS ERAS</b><p>Uma fantasia de crossover que reúne heróis e rivais de Phantom Blood a JoJolion — e aponta para além.</p></article><article><span>03 — ASSINATURA</span><b>SOM & ONOMATOPEIA</b><p>Impactos de mangá ganham a tela; o conceito sonoro evoca rock e dublagem japonesa clássica. Ative os efeitos de combate no botão SOM.</p></article></section>
+
+    <section class="page-section roster-section" id="roster">
+      <div class="section-heading"><div><p class="eyebrow">01 / A LINHAGEM</p><h2>ESCOLHA SEU <i>DESTINO.</i></h2></div><p class="section-note">Heróis, vilões e lendas de cada geração.<br>Todo encontro é uma história esperando para acontecer.</p></div>
+      <div class="fighter-grid" id="featuredRoster"></div>
+      <div class="roster-footer"><span>UMA AMOSTRA DA LINHAGEM JOESTAR</span><button class="outline-btn" id="fullRosterBtn">VER ELENCO POR PARTE <span>↗</span></button></div>
+    </section>
+
+    <section class="systems-section page-section" id="systems">
+      <div class="section-heading light-heading"><div><p class="eyebrow">02 / A ARTE DO COMBATE</p><h2>ESTILO É <i>PODER.</i></h2></div><p class="section-note">Aprenda o ritmo. Leia o rival. Vire o jogo com um único<br>movimento que desafia o próprio destino.</p></div>
+      <div class="system-grid">
+        <article class="system-card system-hamon"><span class="system-number">01</span><span class="system-symbol">波紋</span><p class="system-kicker">ENERGIA VITAL</p><h3>HAMON</h3><p>Respire e transforme energia em ofensiva. Acumule poder com o tempo e com golpes certeiros; use a carga para potencializar especiais e pressionar criaturas da noite.</p><div class="system-meter"><span style="width:68%"></span></div><small>RITMO · CARGA · PRESSÃO</small></article>
+        <article class="system-card system-stand"><span class="system-number">02</span><span class="system-symbol">幽波紋</span><p class="system-kicker">VONTADE MANIFESTA</p><h3>STAND</h3><p>Alterne entre usuário e Stand: alcance, velocidade e rotas de combo mudam com a presença espiritual. Chame um parceiro de assistência para estender a pressão.</p><div class="stand-orbit"><span>USER</span><b>✦</b><span>STAND</span></div><small>ALCANCE · PRESSÃO · CONTROLE</small></article>
+        <article class="system-card system-vamp"><span class="system-number">03</span><span class="system-symbol">吸血</span><p class="system-kicker">PODER PROIBIDO</p><h3>VAMPIRISMO</h3><p>Domine o espaço com golpes gélidos, absorva vitalidade no contato e regenere-se. Os Homens do Pilar elevam esse legado com formas e técnicas ancestrais.</p><div class="vamp-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>RISCO · DRENAGEM · REGENERAÇÃO</small></article>
+        <article class="system-card system-spin"><span class="system-number">04</span><span class="system-symbol">回転</span><p class="system-kicker">MOVIMENTO PERFEITO</p><h3>SPIN & MONTARIA</h3><p>Projéteis e ângulos definem o duelo à distância. Lutadores a cavalo dominam a arena em movimento; o Spin recompensa precisão, espaço e timing.</p><div class="spin-path"><span>●</span><span>⟲</span><span>●</span></div><small>ESPAÇAMENTO · PRECISÃO · MOBILIDADE</small></article>
+      </div>
+      <div class="techniques"><div><span class="tech-icon">⇄</span><p><b>FLASH CANCEL</b><small>Gaste energia para cancelar a recuperação de um golpe e manter o combo vivo.</small></p></div><div><span class="tech-icon">↗</span><p><b>DASH & STEP</b><small>Avance, recue ou escape por um instante para punir uma abertura.</small></p></div><div><span class="tech-icon">☞</span><p><b>PROVOCAÇÃO</b><small>Uma taunt no momento certo abala o rival e pode drenar sua barra.</small></p></div><div><span class="tech-icon">✹</span><p><b>HHA / GHA</b><small>Descarregue o Heart Heat Attack ou o devastador Great Heat Attack.</small></p></div></div>
+    </section>
+
+    <section class="page-section modes-section" id="modes">
+      <div class="section-heading"><div><p class="eyebrow">03 / FORJE SUA JORNADA</p><h2>MODOS DE <i>JOGO.</i></h2></div><p class="section-note">Da primeira pose ao último round:<br>cada batalha tem uma razão para existir.</p></div>
+      <div class="mode-list">
+        <article class="mode-row"><span class="mode-index">01</span><div class="mode-icon">★</div><div><h3>ALL-STAR BATTLE</h3><p>Encontros canônicos e confrontos “e se?” entre gerações. Supere condições especiais e descubra cenas únicas.</p></div><span class="mode-arrow">↗</span></article>
+        <article class="mode-row"><span class="mode-index">02</span><div class="mode-icon">⚔</div><div><h3>ARCADE & VERSUS</h3><p>Uma sequência de rivais controlados pela CPU ou um duelo local para dois jogadores no mesmo teclado.</p></div><span class="mode-arrow">↗</span></article>
+        <article class="mode-row"><span class="mode-index">03</span><div class="mode-icon">⌁</div><div><h3>TREINO & LABORATÓRIO</h3><p>Pratique movimentos, experimente cancelamentos e leia dano, vida e medidor durante a luta.</p></div><span class="mode-arrow">↗</span></article>
+        <article class="mode-row"><span class="mode-index">04</span><div class="mode-icon">◇</div><div><h3>PERSONALIZAÇÃO</h3><p>Desbloqueie cores, poses, falas, onomatopeias e artes conceituais com recompensas de batalha.</p></div><span class="mode-arrow">↗</span></article>
+      </div>
+      <div class="mode-disclaimer">ESTA EXPERIÊNCIA DE NAVEGADOR É UMA DEMONSTRAÇÃO FAN-MADE: CAMPANHA, ONLINE E LOJA SÃO APRESENTADOS COMO CONCEITOS, NÃO FUNCIONALIDADES DISPONÍVEIS.</div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">★</span><span>ALL★STAR <b>CLASH</b></span></a><span>UMA CARTA DE AMOR ÀS GERAÇÕES JOESTAR.</span><span>DESIGN CONCEITUAL · 2026</span></footer>
+
+  <div class="battle-overlay" id="battleOverlay" aria-hidden="true">
+    <div class="battle-top"><a class="brand" href="#home"><span class="brand-mark">★</span><span>ALL★STAR <b>CLASH</b></span></a><div class="battle-mode-label"><span class="live-dot"></span> DUEL MODE <span>·</span> BEST OF 1</div><button class="close-battle" id="closeBattle">SAIR <span>×</span></button></div>
+    <div class="battle-selects"><label>SEU LUTADOR<select id="playerSelect"></select></label><div class="versus-mark">VS</div><label>OPONENTE<select id="enemySelect"></select></label></div>
+    <div class="fight-frame">
+      <div class="fight-top-ui"><div class="health-side"><div class="fighter-label"><b id="playerName">JOTARO KUJO</b><span id="playerStyle">STAND USER · PART 3</span></div><div class="health-track"><i id="playerHealth"></i></div><div class="meter-track"><i id="playerMeter"></i></div></div><div class="round-timer" id="timer">60</div><div class="health-side health-right"><div class="fighter-label"><b id="enemyName">DIO</b><span id="enemyStyle">VAMPIRE · PART 3</span></div><div class="health-track"><i id="enemyHealth"></i></div><div class="meter-track"><i id="enemyMeter"></i></div></div></div>
+      <canvas id="arena" width="1100" height="500" aria-label="Arena de luta"></canvas>
+      <div class="fight-announcer" id="announcer">READY?</div>
+      <div class="hit-counter" id="hitCounter"></div>
+      <div class="fight-controls"><span><kbd>A</kbd><kbd>D</kbd> MOVER</span><span><kbd>J</kbd> GOLPE</span><span><kbd>K</kbd> ESPECIAL</span><span><kbd>L</kbd> HHA</span><span><kbd>U</kbd> DEFESA</span><span><kbd>I</kbd> ASSIST</span><span><kbd>SHIFT</kbd> DASH</span><span><kbd>1</kbd> TROCAR STAND</span><span><kbd>C</kbd> CANCEL · <kbd>T</kbd> TAUNT</span><span class="p2-controls"><kbd>←</kbd><kbd>→</kbd> P2 MOVE · NUMPAD 1/2/3 HIT</div>
+    </div>
+    <div class="battle-bottom"><span>COMBATE LIVRE — JOGADOR 1 VS CPU</span><span id="battleHint">Acumule Heat e encontre sua abertura.</span><button id="rematchBtn">RECOMEÇAR ↻</button></div>
+    <div class="touch-controls" aria-label="Controles de toque"><div><button data-key="a">◀</button><button data-key="d">▶</button></div><div><button data-key="u">GUARDA</button><button data-key="j">GOLPE</button><button data-key="k">ESPECIAL</button><button data-key="l">HHA</button></div></div>
+  </div>
+  <div class="roster-modal" id="rosterModal" aria-hidden="true"><div class="roster-dialog"><button id="closeRoster" class="modal-close">×</button><p class="eyebrow">GUIA DE PERSONAGENS</p><h2>OITO PARTES. <i>INFINITOS DESTINOS.</i></h2><div id="rosterGroups" class="roster-groups"></div><p class="roster-note">Seleção de personagens representativos inspirada na série. Participação e mecânicas variam conforme a versão oficial do jogo.</p></div></div>
+  <script src="game.js"></script>
+</body>
+</html>
